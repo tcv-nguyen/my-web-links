@@ -1,5 +1,6 @@
 MyWebLinks::Application.routes.draw do
   root to: "pages#home"
+  match '/home',   to: 'pages#home',   via: 'get'
   match '/about_us',   to: 'pages#about_us',   via: 'get'
   match '/contact',    to: 'pages#contact',    via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
